@@ -11,13 +11,13 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebFilter(filterName = "LogCostFilter", urlPatterns = {"/*"},
-        initParams = {@WebInitParam(name = "filterPath",
-                      value = "/jshERP-boot/user/login#/jshERP-boot/user/weixinLogin#/jshERP-boot/user/weixinBind#" +
-                              "/jshERP-boot/user/registerUser#/jshERP-boot/user/randomImage#" +
-                              "/jshERP-boot/platformConfig/getPlatform#/jshERP-boot/v2/api-docs#/jshERP-boot/webjars#" +
-                              "/jshERP-boot/systemConfig/static#/jshERP-boot/api/plugin/wechat/weChat/share#" +
-                              "/jshERP-boot/api/plugin/general-ledger/pdf/voucher#/jshERP-boot/api/plugin/tenant-statistics/tenantClean")})
+//@WebFilter(filterName = "LogCostFilter", urlPatterns = {"/*"},
+//        initParams = {@WebInitParam(name = "filterPath",
+//                      value = "/jshERP-boot/user/login#/jshERP-boot/user/weixinLogin#/jshERP-boot/user/weixinBind#" +
+//                              "/jshERP-boot/user/registerUser#/jshERP-boot/user/randomImage#" +
+//                              "/jshERP-boot/platformConfig/getPlatform#/jshERP-boot/v2/api-docs#/jshERP-boot/webjars#" +
+//                              "/jshERP-boot/systemConfig/static#/jshERP-boot/api/plugin/wechat/weChat/share#" +
+//                              "/jshERP-boot/api/plugin/general-ledger/pdf/voucher#/jshERP-boot/api/plugin/tenant-statistics/tenantClean")})
 public class LogCostFilter implements Filter {
 
     private static final String FILTER_PATH = "filterPath";
